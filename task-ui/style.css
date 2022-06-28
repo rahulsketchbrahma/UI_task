@@ -8,21 +8,21 @@
 body {
   background: #000000;
 }
-/* Banner Start */
-.Banner {
+/* banner Start */
+.banner {
   padding: 80px 0px;
 }
-.BannerWrapper {
+.bannerWrapper {
   display: flex;
   align-items: center;
 }
-.BannerWrapper h1 {
+.bannerContent h1 {
   font-weight: 700;
   font-size: 48px;
   line-height: 63px;
   color: #ffffff;
 }
-.BannerContent span {
+.bannerContent span {
   background: linear-gradient(89.87deg, #d0f495 43.71%, #5cb7c3 142.13%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -32,24 +32,24 @@ body {
   line-height: 63px;
   padding-bottom: 19px;
 }
-.BannerWrapper p {
+.bannerContent p {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   color: #d7d7d7;
   padding-bottom: 40px;
 }
-.BannerImage {
+.bannerImage {
   width: 740px;
   height: 557px;
   max-width: 100%;
 }
-.BannerImage img {
+.bannerImage img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
-.BannerInput {
+.bannerInput {
   width: 324px;
   height: 44px;
   border: 1px solid #60ca9a;
@@ -57,7 +57,7 @@ body {
   position: relative;
   margin-bottom: 40px;
 }
-.BannerInput input {
+.bannerInput input {
   border: none;
   background-color: transparent;
   padding: 12px 53px 12px 16px;
@@ -84,18 +84,18 @@ body {
   background-color: #191919;
   font-weight: 500;
 }
-.BannerContent h6 {
+.bannerContent h6 {
   font-weight: 400;
   font-size: 12px;
   line-height: 24px;
   color: #777777;
   padding-bottom: 25px;
 }
-.backedbyImages {
+.backedByImages {
   display: flex;
   gap: 45px;
 }
-.BannerImage span {
+.bannerImage span {
   font-weight: 700;
   font-size: 22px;
   line-height: 27px;
@@ -105,7 +105,7 @@ body {
   background-clip: text;
   padding-inline: 8px;
 }
-.BannerImage p {
+.bannerImage p {
   font-weight: 600;
   font-size: 22px;
   line-height: 27px;
@@ -115,7 +115,7 @@ body {
   flex-wrap: wrap;
 }
 
-/* Banner end */
+/* banner end */
 
 /*trusted start */
 .trustedImages {
@@ -133,7 +133,7 @@ body {
 }
 .reviews {
   border-radius: 10px;
-  padding: 42px 32px 32px 32px;
+  padding: 44px 32px 32px 32px;
   width: 368px;
   max-width: 100%;
   margin-bottom: 24px;
@@ -143,7 +143,6 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding-top: 24px;
 }
 .customer img {
   width: 40px;
@@ -160,12 +159,15 @@ body {
   color: #ffffff;
   opacity: 70%;
 }
+.ratings img {
+  padding-bottom: 20px;
+}
 .reviewsStars p {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+  padding-bottom: 24px;
   color: #ffffff;
-  padding-top: 8px;
 }
 .commonHeading h5 {
   font-weight: 700;
@@ -173,8 +175,9 @@ body {
   line-height: 36px;
   text-align: center;
   color: #ffffff;
+  padding-bottom: 24px;
 }
-.trusted .commonHeading {
+.trusted {
   padding-top: 40px;
   padding-bottom: 24px;
 }
@@ -182,21 +185,16 @@ body {
 /* trusted end */
 
 /* resources start */
+.resources {
+  padding: 108px 0px;
+}
 .resourcesCard {
   border-radius: 10px;
   width: 373px;
   height: 507px;
-  margin-bottom: 50px;
   padding: 200px 32px 40px 32px;
   position: relative;
-}
-
-.resources {
-  padding: 108px 0px;
-}
-
-.resources .commonHeading {
-  padding-top: 108px;
+  background: #24252d;
 }
 
 .commonHeading p {
@@ -207,18 +205,15 @@ body {
   color: #ffffff;
   padding-bottom: 164px;
 }
-.EbookImage img {
+.ebookImage img {
   width: 181px;
   height: 236px;
 }
-.EbookImage {
+.ebookImage {
   position: absolute;
   top: -25%;
   left: 25%;
   transform: translateX(0%);
-}
-.resourcesCard {
-  background: #24252d;
 }
 .resourcesCard h4 {
   font-weight: 600;
@@ -226,7 +221,6 @@ body {
   line-height: 28px;
   color: #ffffff;
   padding-bottom: 16px;
-  padding-right: 45px;
 }
 
 .resourcesCard p {
@@ -255,66 +249,48 @@ body {
     padding: 0px 20px;
   }
   .resourcesCard {
-    margin-bottom: 132px;
-  }
-
-  .Banner {
-    padding: 64px 0px;
-  }
-  .trustedImages {
-    justify-content: center;
+    margin-bottom: 115px;
+    height: auto;
   }
   .trustedReviews,
-  .resourcesBlock {
+  .resourcesBlock,
+  .trustedImages {
     justify-content: center;
   }
 }
 @media only screen and (max-width: 785px) {
-  .commonLink {
-    padding-bottom: 24px;
-  }
-  .BannerWrapper {
+  .bannerWrapper {
     display: block;
     flex-wrap: wrap;
   }
-  .BannerImage {
+  .bannerImage {
     text-align: center;
-    padding-bottom: 48px;
-    height: 258px;
-    max-width: 100%;
+    height: 298px;
   }
-  .BannerImage img {
+  .bannerImage img {
     width: 343px;
     height: auto;
+    padding-bottom: 24px;
   }
-  .BannerImage p {
+  .bannerImage p {
     justify-content: center;
-    flex-wrap: wrap;
-    padding-top: 24px;
-    margin-bottom: 58px;
   }
-  .Banner {
-    height: auto;
-    padding: 64px 0px;
-  }
-  .BannerImage {
-    margin-bottom: 58px;
-  }
-  .trusted .commonHeading {
-    padding-bottom: 40px;
-  }
-  .resources {
-    padding: 0px;
-  }
-  .resources .commonHeading {
-    padding-top: 80px;
-  }
-  .BannerContent {
+  .bannerContent {
     padding-bottom: 56px;
   }
 }
 @media only screen and (max-width: 375px) {
   .reviews {
     width: 290px;
+  }
+  .bannerImage img {
+    width: 300px;
+  }
+  .container {
+    padding: 0px 20px;
+  }
+  .bannerContent span {
+    font-size: 44px;
+    line-height: 56px;
   }
 }
