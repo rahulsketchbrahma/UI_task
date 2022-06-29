@@ -18,7 +18,7 @@ body {
 }
 .bannerContent h1 {
   font-weight: 700;
-  font-size: 48px;
+  font-size: 51px;
   line-height: 63px;
   color: #ffffff;
 }
@@ -28,7 +28,7 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 51px;
   line-height: 63px;
   padding-bottom: 19px;
 }
@@ -50,8 +50,8 @@ body {
   object-fit: cover;
 }
 .bannerInput {
-  width: 324px;
-  height: 44px;
+  width: 100%;
+  max-width: 324px;
   border: 1px solid #60ca9a;
   border-radius: 40px;
   position: relative;
@@ -91,9 +91,9 @@ body {
   color: #777777;
   padding-bottom: 25px;
 }
-.backedByImages {
+.backedBy {
   display: flex;
-  gap: 45px;
+  gap: 24px;
 }
 .bannerImage span {
   font-weight: 700;
@@ -191,7 +191,6 @@ body {
 .resourcesCard {
   border-radius: 10px;
   width: 373px;
-  height: 507px;
   padding: 200px 32px 40px 32px;
   position: relative;
   background: #24252d;
@@ -206,14 +205,16 @@ body {
   padding-bottom: 164px;
 }
 .ebookImage img {
-  width: 181px;
-  height: 236px;
+  width: 100%;
+  height: 100%;
 }
 .ebookImage {
   position: absolute;
   top: -25%;
-  left: 25%;
-  transform: translateX(0%);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 181px;
+  height: 236px;
 }
 .resourcesCard h4 {
   font-weight: 600;
